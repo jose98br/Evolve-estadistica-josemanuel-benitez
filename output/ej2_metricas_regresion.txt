@@ -1,0 +1,25 @@
+Regresión Lineal (Scikit-Learn) — Métricas sobre test set
+=======================================================
+  MAE  = 2.5831  (error medio absoluto en años)
+  RMSE = 3.6186  (error cuadrático medio en años)
+  R²   = 0.5929  (varianza explicada por el modelo)
+
+Interpretación:
+  El modelo explica el 59.3% de la varianza de la esperanza de vida.
+  El error medio de predicción es de 2.58 años.
+
+Coeficientes del modelo (ordenados por importancia):
+  region_SSA                              : -6.7061
+  region_ECA                              : -5.2318
+  hdicode_Low                             : -4.3477
+  region_EAP                              : -4.1132
+  gii_2023                                : -2.9530
+  hdicode_Medium                          : -2.6501
+  region_LAC                              : -2.2226
+  hdicode_Very High                       : 1.7591
+  co2_prod_2023                           : -0.7965
+  gnipc_2023                              : 0.7463
+  region_SA                               : -0.5500
+  mys_2023                                : -0.5462
+  eys_2023                                : -0.1255
+  Intercepto                              : 76.2657

@@ -1,0 +1,63 @@
+DETECCION DE OUTLIERS — Metodo IQR
+==================================================
+
+Esperanza de vida (le_2023):
+  Limites: [51.960, 93.823]
+  Outliers detectados: 0
+
+IDH (hdi_2023):
+  Limites: [0.285, 1.196]
+  Outliers detectados: 0
+
+Años escolaridad esperados (eys_2023):
+  Limites: [5.155, 22.102]
+  Outliers detectados: 0
+
+Años escolaridad medios (mys_2023):
+  Limites: [-0.456, 18.860]
+  Outliers detectados: 0
+
+INB per capita (gnipc_2023):
+  Limites: [-39107.879, 80816.043]
+  Outliers detectados: 7
+    - Ireland: 90884.635
+    - Liechtenstein: 166811.674
+    - Luxembourg: 85461.248
+    - Norway: 112710.021
+    - Qatar: 105353.268
+    - Singapore: 111239.229
+    - Switzerland: 81948.902
+
+Índice desigualdad género (gii_2023):
+  Limites: [-0.319, 0.983]
+  Outliers detectados: 0
+
+CO2 per capita (co2_prod_2023):
+  Limites: [-5.958, 12.070]
+  Outliers detectados: 15
+    - Australia: 14.485
+    - Bahrain: 24.589
+    - Brunei Darussalam: 26.009
+    - Canada: 14.164
+    - Kazakhstan: 13.014
+    - Kuwait: 23.023
+    - Mongolia: 13.597
+    - Oman: 16.905
+    - Palau: 12.312
+    - Qatar: 42.598
+    - Russian Federation: 12.572
+    - Saudi Arabia: 19.926
+    - Trinidad and Tobago: 22.358
+    - United Arab Emirates: 24.103
+    - United States: 14.445
+
+IDH ajustado desigualdad (ihdi_2023):
+  Limites: [-0.055, 1.252]
+  Outliers detectados: 0
+
+==================================================
+DECISION DE TRATAMIENTO:
+Los outliers detectados corresponden a paises reales con valores
+extremos justificados (ej: paises con muy alto INB como Singapur,
+o paises con muy bajo IDH como Sudan del Sur). No son errores de
+medicion sino variabilidad real del fenomeno. Se CONSERVAN todos.

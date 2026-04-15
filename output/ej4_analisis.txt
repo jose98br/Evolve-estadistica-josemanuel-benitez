@@ -1,0 +1,8 @@
+Análisis del Residuo — Serie Temporal Sintética
+==================================================
+  Media          : 0.1271   (ideal ≈ 0)
+  Std            : 3.2220
+  Asimetría      : -0.0509   (ideal ≈ 0)
+  Curtosis       : -0.0610   (ideal ≈ 0)
+  Jarque-Bera p  : 0.5766   (normal)
+  ADF p-value    : 0.0000   (estacionario)
