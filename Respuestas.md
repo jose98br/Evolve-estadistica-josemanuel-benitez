@@ -18,6 +18,10 @@ Tiene sentido predecirla porque es numérica continua (rango 54.5–84.7 años),
 
 **Pregunta 1.2** — ¿Qué distribución tienen las principales variables numéricas y has encontrado outliers? Indica en qué variables y qué has decidido hacer con ellos.
 
+![Histogramas](output/ej1_histogramas.png)
+
+![Boxplots con outliers](output/ej1_boxplots.png)
+
 - `le_2023` (esperanza de vida): distribución simétrica, skewness = -0.34, curtosis = -0.67. Sin outliers.
 - `hdi_2023` (IDH): ligeramente sesgada a la izquierda, skewness = -0.31. Sin outliers.
 - `gnipc_2023` (INB per cápita): fuertemente sesgada a la derecha, skewness = 1.46, curtosis = 1.92. **7 outliers**: países con ingresos muy altos (Singapur, Noruega, Luxemburgo, etc.).
@@ -28,6 +32,8 @@ Decisión: se conservan todos. No son errores de medición sino valores reales q
 ---
 
 **Pregunta 1.3** — ¿Qué tres variables numéricas tienen mayor correlación (en valor absoluto) con la variable objetivo? Indica los coeficientes.
+
+![Heatmap de correlaciones](output/ej1_heatmap_correlacion.png)
 
 | Variable | Descripción | Correlación de Pearson |
 |---|---|---|
@@ -72,6 +78,8 @@ Mismo dataset del Ejercicio 1. Se excluyeron `hdi_2023` e `ihdi_2023` por multic
 
 **Pregunta 2.1** — Indica los valores de MAE, RMSE y R² de la regresión lineal sobre el test set. ¿El modelo funciona bien? ¿Por qué?
 
+![Residuos y real vs predicho — Ejercicio 2](output/ej2_residuos.png)
+
 | Métrica | Valor | Qué significa |
 |---|---|---|
 | MAE | 2.5831 años | Error medio de predicción |
@@ -111,6 +119,8 @@ Los coeficientes ajustados se acercan bien a los reales. Las diferencias son peq
 
 **Pregunta 3.3** — ¿Qué valores de MAE, RMSE y R² has obtenido? ¿Se aproximan a los de referencia?
 
+![Real vs Predicho — Ejercicio 3](output/ej3_predicciones.png)
+
 | Métrica | Valor obtenido | Referencia del profesor |
 |---|---|---|
 | MAE | 1.1665 | ≈ 1.20 (±0.20) ✓ |
@@ -124,6 +134,8 @@ MAE y RMSE están dentro del margen. El R² de 0.69 queda algo por debajo de la 
 ## Ejercicio 4 — Series Temporales
 
 **Pregunta 4.1** — ¿La serie presenta tendencia? Descríbela brevemente (tipo, dirección, magnitud aproximada).
+
+![Descomposición de la serie temporal](output/ej4_descomposicion.png)
 
 Sí. La serie tiene una tendencia lineal creciente: sube de ~44 a ~172 a lo largo de los 6 años (2018–2023), un incremento total de ~128 unidades. La pendiente es 0.05 unidades/día, unos 18 unidades por año. En el gráfico de descomposición se ve claramente como una línea suavemente ascendente.
 
@@ -142,6 +154,10 @@ Sí. Hay un ciclo de ~4 años (1461 días) con amplitud ±8 unidades. La diferen
 ---
 
 **Pregunta 4.4** — ¿El residuo se ajusta a un ruido ideal? Indica la media, la desviación típica y el resultado del test de normalidad (p-value) para justificar tu respuesta.
+
+![ACF y PACF del residuo](output/ej4_acf_pacf.png)
+
+![Histograma del residuo vs Normal teórica](output/ej4_histograma_ruido.png)
 
 Sí, el residuo se ajusta bien a un ruido ideal:
 
