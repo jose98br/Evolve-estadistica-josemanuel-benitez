@@ -3,8 +3,8 @@
 Análisis estadístico completo sobre el dataset **HDR25 Composite Indices** del PNUD (Programa de Naciones Unidas para el Desarrollo, 2025). El dataset recoge indicadores socioeconómicos de 206 países para el año 2023.
 
 **Autor:** Jose Manuel Benítez  
-**Asignatura:** Estadística para Data Science  
-**Entrega:** GitHub Classroom
+**Asignatura:** Estadística  
+**Entrega:** Classroom 
 
 ---
 
